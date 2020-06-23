@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".day_00.MainActivity">
+
+        <com.tangerine.customview.day_01.ColorTrackTextView
+            android:id="@+id/colortrackTextView"
+            android:text="Hello World"
+            app:originColor="@color/colorPrimary"
+            app:changeColor="@color/colorAccent"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/left_to_right"
+            android:layout_width="wrap_content"
+            android:text="左到右"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/right_to_left"
+            android:layout_width="wrap_content"
+            android:text="右到左"
+            android:layout_height="wrap_content"/>
+
+</LinearLayout>
