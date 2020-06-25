@@ -75,7 +75,7 @@ public class ShapeView extends View {
 
     }
 
-    public void exchange() {
+    private  void exchange() {
         switch (mCurrentShape) {
             case CirCly:
                 mCurrentShape = Shape.Square;
@@ -93,7 +93,29 @@ public class ShapeView extends View {
         postInvalidate();
     }
 
-    public enum Shape {
+    private  enum Shape {
         CirCly, Square, Triangle
+    }
+
+
+    /**
+     * @param delayTime  The delay time of each toggle animation has more problems to deal with
+     */
+    public void postExChange(final int delayTime){
+        new Thread(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        while (true){
+                            exchange();
+                            try {
+                                Thread.sleep(delayTime);
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+        ).start();
     }
 }

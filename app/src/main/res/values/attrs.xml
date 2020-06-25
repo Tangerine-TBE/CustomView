@@ -4,7 +4,13 @@
         <attr name="originColor" format="color"/>
         <attr name="changeColor" format="color"/>
     </declare-styleable>
-
+    <declare-styleable name="QQStepView">
+        <attr name="outerColor" format="color"/> //外圈的颜色
+        <attr name="innerColor" format="color"/> //内圈的颜色
+        <attr name="borderWidth" format="dimension"/> //圆弧的宽度
+        <attr name="stepTextSize" format="dimension"/> //计数器的字体大小
+        <attr name="stepTextColor" format="color"/> //计数器的字体颜色
+    </declare-styleable>
     
     
 </resources>
