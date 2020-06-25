@@ -4,19 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".day_03.RatingBarActivity">
-    <com.tangerine.customview.day_03.RatingBar
-        android:id="@+id/RatingBar"
+    tools:context=".day_04.LetterSideBarActivity">
+
+    <com.tangerine.customview.day_04.LetterSideBar
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:gradeNumber="5"
-        app:starHorizontalPadding="46dp"
-        app:starVerticalPadding="20dp"
-        app:starFocus="@drawable/star_selected"
-        app:starNormal="@drawable/star_normal"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:id="@+id/letterSideBar"
+        app:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

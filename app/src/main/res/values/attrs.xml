@@ -20,5 +20,11 @@
         <attr name="starVerticalPadding" format="dimension"/>
     </declare-styleable>
     
+    <declare-styleable name="LetterSideBar">
+        <attr name="textSize" format="dimension"/>
+        <attr name="textOriginColor" format="color"/>
+        <attr name="textChangeColor" format="color"/>
+    </declare-styleable>
+    
     
 </resources>

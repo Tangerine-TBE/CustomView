@@ -11,15 +11,15 @@ import com.tangerine.customview.day_00.QQStepViewActivity;
 import com.tangerine.customview.day_01.ViewPagerActivity;
 import com.tangerine.customview.day_02.ShapeViewActivity;
 import com.tangerine.customview.day_03.RatingBarActivity;
+import com.tangerine.customview.day_04.LetterSideBarActivity;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private AppCompatButton btnQQStepView;
     private AppCompatButton btnColorTrackTextView;
     private AppCompatButton btnShapeView;
     private AppCompatButton btnRatingBar;
+    private AppCompatButton btnLetterSideBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,28 +29,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnColorTrackTextView = findViewById(R.id.btn_toColorTrackTextView);
         btnShapeView = findViewById(R.id.btn_toShapeView);
         btnRatingBar = findViewById(R.id.btn_toRatingBar);
-
+        btnLetterSideBar = findViewById(R.id.btn_letterSideBar);
 
 
         btnQQStepView.setOnClickListener(this);
         btnColorTrackTextView.setOnClickListener(this);
         btnShapeView.setOnClickListener(this);
         btnRatingBar.setOnClickListener(this);
+        btnLetterSideBar.setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View v) {
         Intent intent = new Intent();
-        if (v == btnQQStepView){
+        if (v == btnQQStepView) {
             intent.setClass(this, QQStepViewActivity.class);
-        }else if (v == btnColorTrackTextView ){
+        } else if (v == btnColorTrackTextView) {
             intent.setClass(this, ViewPagerActivity.class);
-        }else if (v == btnShapeView){
-            intent.setClass(this,ShapeViewActivity.class);
-        }else  if (v == btnRatingBar){
+        } else if (v == btnShapeView) {
+            intent.setClass(this, ShapeViewActivity.class);
+        } else if (v == btnRatingBar) {
             intent.setClass(this, RatingBarActivity.class);
-        }else{
+        } else if (v == btnLetterSideBar) {
+            intent.setClass(this, LetterSideBarActivity.class);
+        } else {
             throw new RuntimeException("plz set the intent value");
         }
         startActivity(intent);

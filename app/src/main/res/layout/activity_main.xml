@@ -39,6 +39,15 @@
             android:id="@+id/btn_toRatingBar"
             android:text="RatingBar"
             android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="LetterSideBar"
+            android:id="@+id/btn_letterSideBar"
+            app:layout_constraintTop_toBottomOf="@+id/btn_toRatingBar"/>
+
+
 
 
 
