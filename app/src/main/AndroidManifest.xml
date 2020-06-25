@@ -9,21 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".day_01.ViewPagerActivity">
-
-        </activity>
-        <activity android:name=".day_00.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
+        <activity android:name=".day_03.RatingBarActivity" />
+        <activity android:name=".day_02.ShapeViewActivity" />
+        <activity android:name=".day_00.QQStepViewActivity" />
+        <activity android:name=".day_01.ViewPagerActivity" />
     </application>
 
 </manifest>

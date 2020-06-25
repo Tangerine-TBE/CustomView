@@ -12,5 +12,13 @@
         <attr name="stepTextColor" format="color"/> //计数器的字体颜色
     </declare-styleable>
     
+    <declare-styleable name="RatingBar">
+        <attr name="starNormal" format="reference"/>
+        <attr name="starFocus" format="reference"/>
+        <attr name="gradeNumber" format="integer"/>
+        <attr name="starHorizontalPadding" format="dimension"/>
+        <attr name="starVerticalPadding" format="dimension"/>
+    </declare-styleable>
+    
     
 </resources>

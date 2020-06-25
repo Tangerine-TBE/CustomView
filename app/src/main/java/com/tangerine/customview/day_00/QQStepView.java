@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 
 import com.tangerine.customview.R;
 
-public class CustomView extends View {
+public class QQStepView extends View {
     private int outerColor = Color.BLUE;
     private int innerColor = Color.RED;
     private int borderWidth = 16;
@@ -29,15 +29,15 @@ public class CustomView extends View {
     private int mMaxStep; //最大步数
     private int mCurrentStep;//当前步数
 
-    public CustomView(Context context) {
+    public QQStepView(Context context) {
         this(context, null);
     }
 
-    public CustomView(Context context, @Nullable AttributeSet attrs) {
+    public QQStepView(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CustomView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public QQStepView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         //1.分析效果
         //2.确定自定义属性,编写attrs.xml
@@ -130,7 +130,7 @@ public class CustomView extends View {
      * @param offsetStart Start animation vector offset
      * @param offsetEnd End animation vector offset
      */
-    private void build(int stepMax,int duration,int offsetStart,int offsetEnd){
+    public void build(int stepMax,int duration,int offsetStart,int offsetEnd){
         setStepMax(stepMax);
         ValueAnimator valueAnimator = ObjectAnimator.ofFloat(offsetStart,offsetEnd);
         valueAnimator.setDuration(duration);

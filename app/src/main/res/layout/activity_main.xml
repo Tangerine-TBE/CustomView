@@ -1,23 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".day_00.MainActivity">
+    android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/exchange"
-            android:text="exchange"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
 
-    <com.tangerine.customview.day_02.ShapeView
-        android:id="@+id/shapeView"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_centerInParent="true" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_toQQStep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQStepView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_toColorTrackTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ColorTrackTextView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_toQQStep" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_toColorTrackTextView"
+            android:id="@+id/btn_toShapeView"
+            android:text="ShapeView"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_toShapeView"
+            android:id="@+id/btn_toRatingBar"
+            android:text="RatingBar"
+            android:layout_height="wrap_content"/>
 
 
-</RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
