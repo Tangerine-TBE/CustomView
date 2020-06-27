@@ -105,7 +105,8 @@ public class QQStepView extends View {
         String stepText = mCurrentStep + "";
         Rect textBounds = new Rect();
         mTextPaint.getTextBounds(stepText, 0, stepText.length(), textBounds);
-        int textX = getWidth() / 2 - textBounds.width() / 2;
+//        int textX = getWidth() / 2 - (int)(mTextPaint.measureText(stepText)/2);
+        int textX = getWidth() /2 - textBounds.width()/2;
         //基线
         Paint.FontMetricsInt fontMetricsInt = mTextPaint.getFontMetricsInt();
         int textY = (fontMetricsInt.bottom - fontMetricsInt.top) / 2 - fontMetricsInt.bottom;
